@@ -119,4 +119,14 @@ Finalmente usando Bootstrap y algunos componentes de https://mdbootstrap.com/doc
 
 Debido a que esto es una actividad practica no he implementado funcionalidad para el formulario.
 
+
+
+***
+**Resultado:**
+
+![Alt text](<Activity-Images/Screenshot 2023-07-17 at 13.39.15.png>) 
+![Alt text](<Activity-Images/Screenshot 2023-07-17 at 13.40.52.png>) 
+![Alt text](<Activity-Images/Screenshot 2023-07-17 at 13.41.01.png>) 
+![Alt text](<Activity-Images/Screenshot 2023-07-17 at 13.41.30.png>)
+
 **FIN**
