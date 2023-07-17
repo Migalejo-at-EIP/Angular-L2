@@ -97,5 +97,26 @@ vemos que se han creado los componentes dentro de las carpetas designadas
 
 ![Alt text](<Activity-Images/Screenshot 2023-07-17 at 09.31.15.png>)
 
+adicionalmente he creado una pagina not found y welcome de la misma manera:
+
+![Alt text](<Activity-Images/Screenshot 2023-07-17 at 13.16.37.png>)
+
+Para la navegation he añadido las rutas en el archivo app-routing-module.ts:
+
+![Alt text](<Activity-Images/Screenshot 2023-07-17 at 13.20.06.png>)
+
+y editato el archivo app.component.html
+
+![Alt text](<Activity-Images/Screenshot 2023-07-17 at 13.20.23.png>)
+
+finalmente para la navegacion en el navbar he añadido los links necesarios usando routerLink.
+
+![Alt text](<Activity-Images/Screenshot 2023-07-17 at 13.22.39.png>)
 
 He borrado los archivos .spec.ts Dado a que no vamos a necesitar estos archivos 
+
+Finalmente usando Bootstrap y algunos componentes de https://mdbootstrap.com/docs/standard/components/list-group/ he diseñado el contenido de las paginas de la web.
+
+Debido a que esto es una actividad practica no he implementado funcionalidad para el formulario.
+
+**FIN**
