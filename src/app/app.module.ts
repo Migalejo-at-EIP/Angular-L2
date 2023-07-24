@@ -9,6 +9,8 @@ import { CurriculumComponent } from './pages/curriculum/curriculum.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { LoginComponent } from './pages/login/login.component';
+import { CheckEmtpyFieldDirective } from './directives/check-emtpy-field.directive';
 import { OnHoverOverLinkDirective } from './directives/on-hover-over-link.directive';
 import { OnHoverOverMenuLinkDirective } from './directives/on-hover-over-menu-link.directive';
 
@@ -21,6 +23,8 @@ import { OnHoverOverMenuLinkDirective } from './directives/on-hover-over-menu-li
     CurriculumComponent,
     NotFoundComponent,
     WelcomeComponent,
+    LoginComponent,
+    CheckEmtpyFieldDirective,
     OnHoverOverLinkDirective,
     OnHoverOverMenuLinkDirective
   ],

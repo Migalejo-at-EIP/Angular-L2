@@ -4,6 +4,7 @@ import { CurriculumComponent } from './pages/curriculum/curriculum.component';
 import { FormularComponent } from './pages/formular/formular.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
   {
@@ -15,8 +16,12 @@ const routes: Routes = [
     component: CurriculumComponent
   },
   {
-    path:'formular',
+    path:'contact',
     component: FormularComponent
+  },
+  {
+    path:'login',
+    component: LoginComponent
   },
   {
     path:'404',
