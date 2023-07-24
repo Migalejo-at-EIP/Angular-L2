@@ -16,7 +16,7 @@ const routes: Routes = [
     component: CurriculumComponent
   },
   {
-    path:'formular',
+    path:'contact',
     component: FormularComponent
   },
   {

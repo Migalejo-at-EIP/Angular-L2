@@ -24,7 +24,7 @@ import { OnHoverOverMenuLinkDirective } from './directives/on-hover-over-menu-li
     NotFoundComponent,
     WelcomeComponent,
     LoginComponent,
-    CheckEmtpyFieldDirective
+    CheckEmtpyFieldDirective,
     OnHoverOverLinkDirective,
     OnHoverOverMenuLinkDirective
   ],
