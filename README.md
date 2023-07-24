@@ -1,132 +1,42 @@
-# EIP-Angular: Actividad Lección 3 
+# EIP-Angular: Actividad 2 - Lección 4 & 5
 
-**1. Indique la secuencia de comandos que utilizaría para instalar framework Angular con la última version.**
-**2. Indique los pasos para instalar framework Angular, con versión 11**
+### ⚠️ Para esta actividad he clonado el codigo ya creado para la actividad 1 y he resuelto los ejercicios sobre este. 
+
+
+### Ejercicio 1: crear una directiva propia que modifique el color de fondo de un link y aumentar su tamaño de letra al hacer hover sobre el link.
 
 **Respuesta:**
+para crear una directiva propia usamos el comando: 
 
-1. Despues de haber instalado el Node Package Manager o npm se usa el siguiente comando para instalar la version mas reciente de Angular:
+> ng generate directive 'directives/newDirective'
 
-> npm install @angular/cli@latest
+siendo 'directives' la carpeta donde se creara la directiva y 'newDirective' el nombre de la directiva a ser creada. Para este ejercicio creamos una directiva onHoverOverMenuLink:
 
-2. Para instalar la version 11 de angular se usaria el siguiente comando:
+> ng generate directive 'directives/onHoverOverLink'
 
-> npm install @angular/cli@11
+Para resolver este ejercicio he creado dos directivas 😉
+la primera sera para links normales como el que tenemos en la pagina de bienvenida. La directiva aplicara unos estilos estandard sobre el link. Además cuando el ratón se mueva por encima del link los estilos cambiarán. Y cuando el ratón salga del link, este regresara a sus estilos predeterminados.
 
-Si se desea instalar alguna version de forma global en el ordenador de usaria -g despues de install. Ejemplo:
+para esto creamos la directiva:
 
-> npm install -g @angular/cli@11
+> ng generate directive 'directives/onHoverOverLink'
 
-De lo contrario la instalacion es local en la carpeta actual.
+![Alt text](<Activity-Images/Captura de Pantalla 2023-07-22 a las 19.34.04.jpg>)
 
-***
+vemos que se ha creado:
 
-**Actividad:**
-**Realice una instalación del framework Angular en su última versión estable. Para ello documente cada paso, indicando la secuencia de comandos utilizados y evidencias con imágenes y mostrando las versiones de node, angular.**
+![Alt text](<Activity-Images/Captura de Pantalla 2023-07-22 a las 19.34.25.jpg>)
 
+ya que no haremos test en este caso, podemos borrar el fichero specs.ts pero esto es opcional 
 
-
-
-***
-**Instalacion:**
-
-Primero navegamos a la carpeta donde crearemos el proyecto:
-
-![Alt text](<Activity-Images/Screenshot 2023-07-17 at 08.52.17.png>)
-
-Instalamos la version mas reciente y estable de angular. Según la website de Angular es la version 16:
-
-> npm install @angular/cli@16
-
-![Alt text](<Activity-Images/Screenshot 2023-07-17 at 08.53.16.png>)
-
-con 'ng v' podemos comprobar la version de angular:
-> ng v
-
-![Alt text](<Activity-Images/Screenshot 2023-07-17 at 08.54.42.png>)
-
-ahora creamos un nuevo proyecto:
-
-> ng new Actividad-Leccion-3
- 
-![Alt text](<Activity-Images/Screenshot 2023-07-17 at 08.57.50.png>)
-
-una vez creado el proyecto navegamos a la carpeta nueva que ha sido creada:
-
-![Alt text](<Activity-Images/Screenshot 2023-07-17 at 08.58.15.png>)
-
-si abrimos esta carpeta en nuestro editor de codigo preferido (en mi caso Visual Studio Code) podemos ver que todos los archivos han sido creados como era de esperarse:
-
-![Alt text](<Activity-Images/Screenshot 2023-07-17 at 09.03.15.png>)
-
-
-***
-
-**Actividad:**
-
-**Una vez instalado, debe crear al menos tres componentes. La finalidad de los
-componentes creados será:**
-
-1. Encabezado de página web.
-2. Footer de página web.
-3. Formulario de página web.
-4. Currículum del alumno.
+y escribimos el siguiente codigo en on-hover-over-link-directive.ts:
+![Alt text](<Activity-Images/Captura de Pantalla 2023-07-22 a las 20.28.27.jpg>)
 
 
 
+### resultado:
 
+![Alt text](<Activity-Images/Captura de Pantalla 2023-07-22 a las 20.31.33.jpg>)
 
-***
-**Instalacion de componentes:**
+![Alt text](<Activity-Images/Captura de Pantalla 2023-07-22 a las 20.31.42.jpg>)
 
-Para instalar o generar componentes usamos ng generate component o su version abreviada ng g c "componente" (antes del componente podemos poder la carpeta: "carpeta/componente")
-
-en este caso creamos los componentes solicitados:
-
-> ng g c components/Header
-
-> ng g c components/Footer
-
-> ng g c pages/formular
-
-> ng g c pages/curriculum
-
-vemos que se han creado los componentes dentro de las carpetas designadas 
-
-![Alt text](<Activity-Images/Screenshot 2023-07-17 at 09.30.17.png>)
-
-![Alt text](<Activity-Images/Screenshot 2023-07-17 at 09.31.15.png>)
-
-adicionalmente he creado una pagina not found y welcome de la misma manera:
-
-![Alt text](<Activity-Images/Screenshot 2023-07-17 at 13.16.37.png>)
-
-Para la navegation he añadido las rutas en el archivo app-routing-module.ts:
-
-![Alt text](<Activity-Images/Screenshot 2023-07-17 at 13.20.06.png>)
-
-y editato el archivo app.component.html
-
-![Alt text](<Activity-Images/Screenshot 2023-07-17 at 13.20.23.png>)
-
-finalmente para la navegacion en el navbar he añadido los links necesarios usando routerLink.
-
-![Alt text](<Activity-Images/Screenshot 2023-07-17 at 13.22.39.png>)
-
-He borrado los archivos .spec.ts Dado a que no vamos a necesitar estos archivos 
-
-Finalmente usando Bootstrap y algunos componentes de https://mdbootstrap.com/docs/standard/components/list-group/ he diseñado el contenido de las paginas de la web.
-
-Debido a que esto es una actividad practica no he implementado funcionalidad para el formulario.
-
-
-
-***
-**Resultado:**
-
-![Alt text](<Activity-Images/Screenshot 2023-07-17 at 13.39.15.png>) 
-![Alt text](<Activity-Images/Screenshot 2023-07-17 at 13.40.52.png>) 
-![Alt text](<Activity-Images/Screenshot 2023-07-17 at 13.41.01.png>) 
-![Alt text](<Activity-Images/Screenshot 2023-07-17 at 13.41.30.png>)
-
-**FIN**
