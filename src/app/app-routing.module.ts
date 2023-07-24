@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CurriculumComponent } from './pages/curriculum/curriculum.component';
-import { FormularComponent } from './pages/formular/formular.component';
+import { ContactComponent } from './pages/formular/contact.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -17,7 +17,7 @@ const routes: Routes = [
   },
   {
     path:'contact',
-    component: FormularComponent
+    component: ContactComponent
   },
   {
     path:'login',
