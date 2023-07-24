@@ -9,6 +9,8 @@ import { CurriculumComponent } from './pages/curriculum/curriculum.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { OnHoverOverLinkDirective } from './directives/on-hover-over-link.directive';
+import { OnHoverOverMenuLinkDirective } from './directives/on-hover-over-menu-link.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
     FormularComponent,
     CurriculumComponent,
     NotFoundComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    OnHoverOverLinkDirective,
+    OnHoverOverMenuLinkDirective
   ],
   imports: [
     BrowserModule,
