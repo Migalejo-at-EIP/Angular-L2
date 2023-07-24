@@ -11,6 +11,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CheckEmtpyFieldDirective } from './directives/check-emtpy-field.directive';
+import { OnHoverOverLinkDirective } from './directives/on-hover-over-link.directive';
+import { OnHoverOverMenuLinkDirective } from './directives/on-hover-over-menu-link.directive';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { CheckEmtpyFieldDirective } from './directives/check-emtpy-field.directi
     WelcomeComponent,
     LoginComponent,
     CheckEmtpyFieldDirective
+    OnHoverOverLinkDirective,
+    OnHoverOverMenuLinkDirective
   ],
   imports: [
     BrowserModule,
