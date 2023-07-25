@@ -25,7 +25,7 @@ export class LoginButtonDirective {
     } else {
       LoginComponent.usernameInputBorderColor = this.badColor
       LoginComponent.emailIsValid = false
-      LoginComponent.invalidEmailMessage = "el email introducido no es valido"
+      LoginComponent.invalidEmailMessage = "El email introducido no es válido"
     }
   }
 
