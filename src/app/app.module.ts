@@ -9,10 +9,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { LoginComponent } from './pages/login/login.component';
-import { CheckEmtpyFieldDirective } from './directives/check-emtpy-field.directive';
 import { OnHoverOverLinkDirective } from './directives/on-hover-over-link.directive';
 import { OnHoverOverMenuLinkDirective } from './directives/on-hover-over-menu-link.directive';
-import { ContactComponent } from './pages/formular/contact.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { ContactSendButtonDirective } from './directives/ContactForm/contact-send-button.directive';
+import { ContactGetInputDirective } from './directives/ContactForm/contact-get-input.directive';
+import { ResetContactDirective } from './directives/ContactForm/reset-contact.directive';
+import { LoginGetInputDirective } from './directives/login/login-get-input.directive';
+import { LoginButtonDirective } from './directives/login/login-button.directive';
+import { ResetLoginDirective } from './directives/login/reset-login.directive';
 
 @NgModule({
   declarations: [
@@ -24,9 +29,14 @@ import { ContactComponent } from './pages/formular/contact.component';
     NotFoundComponent,
     WelcomeComponent,
     LoginComponent,
-    CheckEmtpyFieldDirective,
     OnHoverOverLinkDirective,
-    OnHoverOverMenuLinkDirective
+    OnHoverOverMenuLinkDirective,
+    ContactSendButtonDirective,
+    ContactGetInputDirective,
+    ResetContactDirective,
+    LoginGetInputDirective,
+    LoginButtonDirective,
+    ResetLoginDirective
   ],
   imports: [
     BrowserModule,

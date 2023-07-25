@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Actividad 2 - Leccion 4 & 5';
+
+  static contactUsername = ''
+  static contactMessage = ''
 }

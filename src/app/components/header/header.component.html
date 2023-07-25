@@ -10,11 +10,11 @@
       </li>
 
       <li onHoverOverMenuLink class="nav-item justify-self-center align-self-center">
-        <a class="nav-link hover-zoom" [ngClass]="{'active': router.url === '/contact'}"  routerLink="contact">Contacto</a>
+        <a appResetContact class="nav-link hover-zoom" [ngClass]="{'active': router.url === '/contact'}"  routerLink="contact">Contacto</a>
       </li>
 
       <li onHoverOverMenuLink class="nav-item justify-self-center align-self-center">
-        <a class="nav-link hover-zoom" [ngClass]="{'active': router.url === '/login'}"  routerLink="login">Iniciar Sesión</a>
+        <a appResetLogin class="nav-link hover-zoom" [ngClass]="{'active': router.url === '/login'}"  routerLink="login">Iniciar Sesión</a>
       </li>
     </ul>
   </div>
