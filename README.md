@@ -133,3 +133,6 @@ Las directivas de reset ponen los formularios en su forma original cuando se cam
 ![Alt text](<Activity-Images/Screenshot 2023-07-25 at 16.21.29.png>)
 ![Alt text](<Activity-Images/Screenshot 2023-07-25 at 16.21.36.png>)
 ![Alt text](<Activity-Images/Screenshot 2023-07-25 at 16.21.51 1.png>)
+
+
+# FIN
