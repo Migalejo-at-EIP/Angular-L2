@@ -5,7 +5,7 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 })
 export class OnHoverOverLinkDirective {
 
-  private colorForLink = '#0390fc'
+   public colorForLink = '#0390fc'
 
   constructor( private element:ElementRef ) { 
     this.element.nativeElement.style.borderStyle ='solid';
@@ -29,8 +29,6 @@ export class OnHoverOverLinkDirective {
     this.element.nativeElement.style.color = this.colorForLink;
     this.element.nativeElement.style.backgroundColor = 'white';
     this.element.nativeElement.style.fontSize = '17px';
-
-
  }
 
 }

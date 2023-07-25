@@ -5,20 +5,53 @@
 
     <div class="d-flex flex-column align-items-center">
         <div class="form-control">
+
             <div class="mb-3">
                 <label for="inputEmail" class="form-label">Tu Email</label>
-                <input appCheckEmtpyField type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                <input appLoginGetInput [ngStyle]="{'borderColor': emailColor}" type="email" class="form-control"
+                    id="inputEmail" aria-describedby="emailHelp">
             </div>
 
-             <div class="mb-3">
+            <div class="mb-3">
                 <label for="inputPassword" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="inputPassword" aria-describedby="passwordHelp">
+                <input appLoginGetInput [ngStyle]="{'borderColor': passwordColor}"  type="password" class="form-control"
+                    id="inputPassword" aria-describedby="passwordHelp">
             </div>
 
             <div class="d-flex flex-row justify-content-center
                 justify-content-sm-start mb-3">
-                <button type="submit" class="btn btn-primary bg">Login</button>
+                <div appLoginButton type="submit" class="btn btn-primary bg">Login</div>
             </div>
+
+            <div class="mt-5 mb-5">
+                <hr>
+            </div>
+
+            <ng-template [ngIf]="emailIsValid" [ngIfElse]="emailIsNotValid">
+                <div>
+                    <p class="fw-bold">Email válido: </p>
+                    <p>{{email}}</p>
+                </div>
+            </ng-template>
+
+            <ng-template #emailIsNotValid>
+                <div>
+                    {{invalidEmailMessage}}
+                </div>
+            </ng-template>
+
+            <ng-template [ngIf]="passwordIsValid" [ngIfElse]="passwordIsNotValid">
+                <div>
+                    <p class="fw-bold">Contraseña válida: </p>
+                    <p>{{password}}</p>
+                </div>
+            </ng-template>
+
+            <ng-template #passwordIsNotValid>
+                <div>
+                    {{invalidPasswordMessage}}
+                </div>
+            </ng-template>
 
         </div>
 

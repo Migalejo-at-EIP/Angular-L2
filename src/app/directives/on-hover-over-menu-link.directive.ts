@@ -4,20 +4,29 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
   selector: '[onHoverOverMenuLink]'
 })
 export class OnHoverOverMenuLinkDirective {
-  private standardStyles = "";
+  private colorForLink = '#0390fc'
 
 
-  constructor( private element:ElementRef ) { 
-    this.standardStyles = this.element.nativeElement.style;
+  constructor(private element: ElementRef) {
+    this.setStandardStyles()
   }
 
   @HostListener('mouseover')
-  private OnMouseOverLink () {
-    this.element.nativeElement.style.textDecoration= 'underline';
- }
+  private OnMouseOverLink() {
+    this.element.nativeElement.style.borderStyle = 'solid';
+    this.element.nativeElement.style.borderRadius = '10px';
+    this.element.nativeElement.style.borderColor = this.colorForLink;
 
- @HostListener ('mouseout')
- private onMouseOutOfLink () {
-    this.element.nativeElement.style = this.standardStyles;
-}
+  }
+
+  @HostListener('mouseout')
+  private onMouseOutOfLink() {
+    this.setStandardStyles()
+  }
+
+  private setStandardStyles() {
+    this.element.nativeElement.style.borderStyle = 'solid';
+    this.element.nativeElement.style.borderRadius = '10px';
+    this.element.nativeElement.style.borderColor = "transparent";
+  }
 }

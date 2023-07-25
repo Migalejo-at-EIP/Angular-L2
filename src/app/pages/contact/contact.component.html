@@ -1,0 +1,65 @@
+<form class="p-3 mb-5">
+
+
+    <div class="d-flex flex-column pr-3 ">
+        <p class="fs-1 mt-3 pb-4">Contactame</p>
+    </div>
+
+    <div class="d-flex flex-column align-items-center">
+        <div>
+            <div class="mb-3">
+                <label for="inputEmail" class="form-label">Tu Email</label>
+                <input appContactGetInput [ngStyle]="{'borderColor': usernameBC}" type="email" class="form-control"
+                    id="inputEmail" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3">
+                <label for="textArea" class="form-label">Tu mensaje</label>
+                <textarea appContactGetInput [ngStyle]="{'borderColor': messageBC}" class="form-control" id="textArea"
+                    rows="3"></textarea>
+            </div>
+
+            <div id="disclaimer" class="form-text"> Marca la casilla de abajo, just for fun (igual esto es un mockup y
+                no
+                funciona, asi que ni guardaremos tus datos, ni los compartiremos con nadie :-P ... y tampoco pasara nada
+                al
+                cliquearla)
+            </div>
+
+            <div class="mb-3 mt-3 form-check">
+                <input type="checkbox" class="form-check-input" id="checkbox">
+                <label class="form-check-label" for="checkbox">Entendido</label>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center
+                justify-content-sm-start">
+                <div appClickOnContactButton class="btn btn-primary bg">Enviar</div>
+            </div>
+
+            <div class="mt-5 mb-5">
+                <hr>
+            </div>
+
+            <ng-template [ngIf]="username !== ''">
+                <div>
+                    <p class="fw-bold">Tu Usuario es: </p>
+                    <p>{{username}}</p>
+
+                </div>
+            </ng-template>
+
+            <ng-template [ngIf]="message !== ''">
+                <div>
+                    <p class="fw-bold">Tu mensaje es: </p>
+                    <p>{{message}}</p>
+                </div>
+            </ng-template>
+
+        </div>
+
+
+    </div>
+
+
+
+</form>
